@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to right, white, rgb(85, 89, 88));
+}
+
+h1 {
+  text-shadow: 1px 2px 3px;
+  animation: rotate 2s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  border-bottom: 1px rgb(225, 221, 221) solid;
+  animation-name: slideIn;
+  animation-duration: 1.7s;
+}
+
+
+.heading {
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+ul li {
+  list-style: none;
+  color: white;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 40px;
+}
+
+ul li a:hover {
+  color: rgb(160, 224, 160);
+  text-decoration: underline;
+}
+
+.anchors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.para-1 {
+  padding-top: 40px;
+}
+
+.para-1 h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 200;
+
+}
+
+.para-2 {
+
+  padding: 20px;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+  color: rgb(54, 54, 55);
+}
+
+
+#login,
+#signup {
+  padding: 5px 10px;
+  width: 120px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+#login {
+  background-color: black;
+  color: white;
+  animation-name: slidein;
+}
+
+#signup {
+  background-color: white;
+  color: black;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(500%);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+#signup:hover {
+  background-color: rgb(128, 127, 127);
+  border-radius: 5px;
+  color: white;
+}
+
+#login:hover {
+  background-color: rgb(168, 164, 164);
+  border-radius: 5px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.product {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(182, 180, 180);
+  padding: 10px;
+  font-weight: 500;
+  box-shadow: 2px 3px 4px rgb(42, 41, 41);
+  border-radius: 10px;
+
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-500%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.product {
+  animation-name: sideIn;
+  animation: slideIn 2s ease-out;
+  animation-timing-function: ease-in-out;
+}
+
+.shirt-img {
+  width: 250px;
+  height: 290px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(42, 41, 41);
+}
+
+
+.landing {
+  flex-basis: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(152, 150, 150);
+  padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 4px rgb(15, 14, 14);
+  border-radius: 10px;
+  height: 350px;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes fade-in {
+  0% {
+    transform: translateX(500%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 2;
+  }
+}
+
+
+
+.img-3 {
+
+  height: 310px;
+  width: 100%;
+  border-radius: 20%;
+  box-shadow: 2px 3px 4px rgb(14, 13, 13);
+}
+
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .landing {
+    flex-basis: fit-content;
+  }
+
+  .img-3 {
+    width: 600px;
+  }
+
+  .product {
+    flex-basis: fit-content;
+    width: 340px;
+  }
+}

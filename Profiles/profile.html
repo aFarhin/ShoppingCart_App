@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="./profile.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Shopping Cart</div>
+    <div class="nav-links">
+      <a href="../shop/shop.html">Shop</a>
+      <a href="../Signup/signup.html">Signup</a>
+<!--       <a href="../cart/index.html">Cart</a> -->
+    </div>
+  </nav>
+
+
+  <div class="profile">My Profile</div>
+
+  <input type="text" id="fName" placeholder="First Name" required />
+  <input type="text" id="lName" placeholder="Last Name" required /><br>
+  <button id="saveInfo">Save Info</button>
+  <br />
+
+  <div class="profile">Edit Password</div>
+  <input type="password" placeholder="Old Password" id="old-password" required />
+  <input type="password" placeholder="New Password" id="new-password" required />
+  <input type="password" placeholder="Confirm New Password" id="cnfm-pass" required />
+  <button id="change">Change Password</button>
+  <br />
+  <button id="logOut">Log-out</button>
+  <script src="./profile.js"></script>
+</body>
+
+</html>

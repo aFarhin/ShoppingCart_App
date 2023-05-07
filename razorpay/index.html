@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Razorpay Button</title>
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* background-color: rgb(162, 196, 169); */
+			background: linear-gradient(to right,rgb(8, 118, 10), gray, white, rgb(173, 125, 14));
+			height: 100vh;
+		}
+
+		#rzp-button1{
+			width: 200px;
+			background: linear-gradient(rgb(17, 126, 21), rgb(216, 232, 222), rgb(160, 77, 22));
+			color: rgb(0, 13, 95);
+			border-radius: 7px;
+			padding: 20px;
+			font-weight: 700;
+			cursor: pointer;
+			box-shadow: 2px 3px 5px;
+			font-size: 20px;
+		}
+		#sh{
+			display: none;	
+			width: auto;
+			background-color: rgb(92, 8, 8);
+			border-radius: 7px;
+			cursor: pointer;
+			box-shadow: 2px 3px 5px rgb(46, 44, 44);
+		}
+		#sh a{
+			font-size: 15px;
+			color: rgb(253, 252, 252);
+			font-weight: 700;
+			text-decoration: none;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<button id="rzp-button1" t>Pay Now</button>
+	<h1 id="thanks" style="display: none; color: rgb(64, 4, 4); width: auto;">Thank You!🙏  </h1><br><br>
+	<button id="sh"><a href="../shop/shop.html"> Go to Shop Page</span></a></button>
+	
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script src="./script.js"></script>
+</body>
+
+</html>
